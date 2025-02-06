@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Arèma</title>
+    <link rel="stylesheet" href="../CSS/BT-CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../Icons/remixicon.css">
+    <link rel="stylesheet" href="../Font/stylesheet.css">
+    <link rel="stylesheet" href="../CSS/WEB-CSS/Main.css">
+</head>
+<body onresize="sizechange()">
+    <nav class="Navbar">
+        <div class="Nav-container">
+            <a href="#" class="Logo">Arèma</a>
+            <div class="Nav-Links">
+                <a href="index.html">Home</a>
+                <div class="dropdown mt-2 me-3 ms-3">
+                    <div class="dropbtn">Products <i class="ri-arrow-down-wide-line"></i></div>
+                    <div class="dropdown-content">
+                      <a href="#Catalog">Catalog</a>
+                      <a href="#categories">Categories</a>
+                    </div>
+                </div>
+                <a href="About.html">About</a>
+                <a href="Testimonial.html">Testimonial</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+            <div class="Auth-Icons">
+                <a class="Auth-Icon" href=""><i class="ri-search-line Icons"></i></a>
+                <a class="Auth-Icon" href="Login.html"><i class="ri-account-circle-line Icons"></i></a>
+                <a class="Auth-Icon" href=""><i class="ri-shopping-bag-3-line Icons"></i></a>
+            </div>
+            <div class="Hamburger" onclick="clickme()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <i class="ri-close-large-line close-1" onclick="clickmeone()"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <h1>About Arèma</h1>
+        <p>Crafting exceptional shopping experiences since 2010</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="about-section">
+        <!-- Our Story -->
+        <section class="our-story">
+            <div class="story-image">
+                <img src="../Images/About-2.jpg" alt="Our Story" style="width: 100%; height: auto; border-radius: 30px;">
+            </div>
+            <div class="story-content">
+                <h2>Our Story</h2>
+                <p>Founded in 2010, Arèma began with a simple mission: to provide quality products with exceptional service. What started as a small online store has grown into a trusted marketplace serving customers worldwide.</p>
+                <p>Today, we continue to innovate and expand, always keeping our core values of customer satisfaction, quality, and integrity at the heart of everything we do.</p>
+            </div>
+        </section>
+
+        <!-- Our Values -->
+        <section class="our-values">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-heart icon"></i>
+                    <h3>Quality First</h3>
+                    <p>We never compromise on the quality of our products and services.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-handshake icon"></i>
+                    <h3>Customer Focus</h3>
+                    <p>Your satisfaction is our top priority in every interaction.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-globe icon"></i>
+                    <h3>Sustainability</h3>
+                    <p>Committed to environmentally responsible business practices.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team -->
+        <section class="our-team">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="../Images/E-1.jpg" alt="Team Member 1">
+                    <h4>John Doe</h4>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="../Images/E-2.jpg" alt="Team Member 2">
+                    <h4>Jane Smith</h4>
+                    <p>Head of Operations</p>
+                </div>
+                <div class="team-member">
+                    <img src="../Images/E-3.jpg" alt="Team Member 3">
+                    <h4>Mike Johnson</h4>
+                    <p>Customer Experience</p>
+                </div>
+                <div class="team-member">
+                    <img src="../Images/E-4.jpg" alt="Team Member 4">
+                    <h4>Sarah Wilson</h4>
+                    <p>Product Manager</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="icon">1M+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="icon">50K+</h3>
+                    <p>Products</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="icon">100+</h3>
+                    <p>Countries Served</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="icon">24/7</h3>
+                    <p>Customer Support</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home icon"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-bag icon"></i> Shop</a></li>
+                        <li><a href="About.html"><i class="fas fa-info-circle icon"></i> About Us</a></li>
+                        <li><a href="Contact.html"><i class="fas fa-phone icon"></i> Contact</a></li>
+                        <li><a href="#"><i class="fas fa-truck icon"></i> Track Order</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-question-circle icon"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-exchange-alt icon"></i> Returns Policy</a></li>
+                        <li><a href="#"><i class="fas fa-shipping-fast icon"></i> Shipping Info</a></li>
+                        <li><a href="#"><i class="fas fa-lock icon"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt icon"></i> Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-map-marker-alt icon"></i> 123 Store Street, City, Country</a></li>
+                        <li><a href="tel:+1234567890"><i class="fas fa-phone-alt icon"></i> +1 234 567 890</a></li>
+                        <li><a href="mailto:info@store.com"><i class="fas fa-envelope icon"></i> info@store.com</a></li>
+                        <li><a href="#"><i class="fas fa-clock icon"></i> Mon - Fri: 9:00 - 18:00</a></li>
+                    </ul>
+                    <div class="social-links icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <h3 style="margin-top: 20px;">We Accept</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                        <i class="fab fa-cc-discover"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Store Name. All rights reserved. Designed with <i class="fas fa-heart" style="color: #ff4d4d;"></i> for our customers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/BT-JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/WEB-JS/Web.js"></script>
+</body>
+</html>

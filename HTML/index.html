@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arèma | Lifestyle</title>
+    <link rel="stylesheet" href="../CSS/BT-CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../Icons/remixicon.css">
+    <link rel="stylesheet" href="../Font/stylesheet.css">
+    <link rel="stylesheet" href="../CSS/WEB-CSS/Main.css">
+</head>
+
+<body onresize="sizechange()">
+    <nav class="Navbar">
+        <div class="Nav-container">
+            <a href="#" class="Logo">Arèma</a>
+            <div class="Nav-Links">
+                <a href="index.html">Home</a>
+                <div class="dropdown mt-2 me-3 ms-3">
+                    <div class="dropbtn">Products <i class="ri-arrow-down-wide-line"></i></div>
+                    <div class="dropdown-content">
+                      <a href="#Catalog">Catalog</a>
+                      <a href="#categories">Categories</a>
+                    </div>
+                </div>
+                <a href="About.html">About</a>
+                <a href="Testimonial.html">Testimonial</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+            <div class="Auth-Icons">
+                <a class="Auth-Icon" href=""><i class="ri-search-line Icons"></i></a>
+                <a class="Auth-Icon" href="Login.html"><i class="ri-account-circle-line Icons"></i></a>
+                <a class="Auth-Icon" href=""><i class="ri-shopping-bag-3-line Icons"></i></a>
+            </div>
+            <div class="Hamburger" onclick="clickme()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <i class="ri-close-large-line close-1" onclick="clickmeone()"></i>
+        </div>
+    </nav>
+    <div class="divhide">
+        <div class="Nav-Links ham-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown mt-2 me-3 ms-3">
+                <div class="dropbtn">Products <i class="ri-arrow-down-wide-line"></i></div>
+                <div class="dropdown-content">
+                  <a href="#Catalog">Catalog</a>
+                  <a href="#categories">Categories</a>
+                </div>
+            </div>
+            <a href="About.html">About</a>
+            <a href="Testimonial.html">Testimonial</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+        <div class="ham-icons">
+            <a class="Ham-Icon" href=""><i class="ri-search-line Icons-1"></i></a>
+            <a class="Ham-Icon" href="Login.html"><i class="ri-account-circle-line Icons-1"></i></a>
+            <a class="Ham-Icon" href=""><i class="ri-shopping-bag-3-line Icons-1"></i></a>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators mb-4">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../Images/Carousel-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Aesthetic</h1>
+                    <p class="mb-4">Elegance is not about being noticed, it’s about being remembered.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="../Images/Carousel-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Apparel</h1>
+                    <p class="mb-4">Fashion is what you buy, style is what you do with it.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="../Images/Carousel-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Attire</h1>
+                    <p class="mb-4">Style is a way to say who you are without having to speak.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section id="categories">
+        <div class="container">
+            <h2>Popular Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="../Images/Categories-1.jpg" alt="Breakfast">
+                    <div class="category-overlay">
+                        <h3>Furnitur & Decor</h3>
+                        <p>Creating magic in the heart of my house.</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="../Images/Categories-2.jpg" alt="Main Course">
+                    <div class="category-overlay">
+                        <h3>Fashion</h3>
+                        <p>Classics can never go out of style, and with them, neither will you.</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="../Images/Categories-3.jpg" alt="Desserts">
+                    <div class="category-overlay">
+                        <h3>Cosmetics</h3>
+                        <p>Experience the Essence of Glamorous Sophistication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="Major-section">
+        <h1 class="Head pt-5 fw-semibold">Shop Now</h1>
+        <div class="Section-1 d-flex flex-wrap container">
+            <div class="card mb-3 text-3 pb-5">
+                <img src="../Images/Card-1.jpg" class="card-img-top text-3" alt="...">
+                <div class="card-body text-3">
+                    <h1 class="card-title title-1">Hand Bag</h1>
+                    <h5 class="card-title Title-1">"The Perfect Carry Companion"</h5>
+                    <div
+                        class="d-flex flex-column align-items-start align-items-xxl-center align-items-xl-center align-items-lg-center">
+                        <p class="card-text">
+                        <div>"Category": "Handbag",</div>
+                        <div>"Material": "Genuine Leather / Faux Leather / Canvas / Nylon",</div>
+                        <div>"Color": "Black, Brown, Beige, Red, Blue, Multi-color",</div>
+                        <div>"Size": "Small / Medium / Large",</div>
+                        <div>"Dimensions": "Varies by model (e.g., 12\" x 8\" x 4\")",</div>
+                        <div>"Closure Type": "Zipper / Magnetic Snap / Buckle",</div>
+                        <div>"Handle Type": "Top Handle / Shoulder Strap / Crossbody",</div>
+                        <div>"Compartments": "Main compartment, Inner pockets, Zippered section",</div>
+                        <div>"Features": "Water-resistant, Adjustable strap, Lightweight",</div>
+                        <div>"Usage": "Casual, Formal, Travel, Work",</div>
+                        <div>"Brand": "Varies (e.g., Michael Kors, Gucci, Coach, Local Brands)",</div>
+                        <div>"Price Range": "$30 - $500+"</div>
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-1">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    <div id="Catalog">
+        <div class="container d-flex justify-content-between mt-5">
+            <h1 class="text-2 fw-semibold">Catalog</h1>
+            <h5 class="d-flex align-items-center text-2"><a href="" class="text-2">See All</a></h5>
+        </div>
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="../Images/Clothing-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <h1 class="d-inline-block">Lenses</h1>
+                                <h5 class="d-inline-block">- "Vision aid"</h5>
+                            </h5>
+                            <p class="card-text mt-xxl-4 mt-xl-4 mt-lg-4 mt-md-4 mt-sm-4 mt-xs-5">Eyewear serves both
+                                functional and fashion purposes, providing vision
+                                correction, protection from the sun, or enhancing style. From prescription glasses to
+                                sunglasses, eyewear comes in various materials, designs, and lens types. It ensures comfort,
+                                sharpens vision, and adds a personal touch.</p>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-1 mb-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../Images/Clothing-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <h1 class="d-inline-block">Hat</h1>
+                                <h5 class="d-inline-block">- "Head covering"</h5>
+                            </h5>
+                            <p class="card-text mt-xxl-4 mt-xl-4 mt-lg-4 mt-md-4 mt-sm-4 mt-xs-5">A hat is a headwear that
+                                serves both functional and fashionable
+                                purposes. It can provide protection from the elements, such as sun or rain, and also make a
+                                style statement. Hats come in various shapes, sizes, and materials, ranging from casual caps
+                                to formal fedoras or elegant wide-brimmed designs.</p>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-1 mb-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../Images/Clothing-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <h1 class="d-inline-block">Wristwatch</h1>
+                                <h5 class="d-inline-block">- "Timepiece accessory"</h5>
+                            </h5>
+                            <p class="card-text mt-xxl-4 mt-xl-4 mt-lg-4 mt-md-4 mt-sm-4 mt-xs-5">A watch is a portable
+                                timepiece designed to be worn on the wrist. It
+                                typically features a dial with hour, minute, and second hands, often accompanied by
+                                additional features like a date function, chronograph, or alarm. Watches come in various
+                                styles, from classic analog to modern digital designs.</p>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-1 mb-5">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../Images/Clothing-4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <h1 class="d-inline-block">Accessories</h1>
+                                <h5 class="d-inline-block">- "Fashion extras"</h5>
+                            </h5>
+                            <p class="card-text mt-xxl-4 mt-xl-4 mt-lg-4 mt-md-4 mt-sm-4 mt-xs-5    ">Accessories are
+                                stylish additions that complement and enhance outfits.
+                                From jewelry, bags, and scarves to hats, belts, and sunglasses, they add personality and
+                                flair. Accessories can elevate simple looks, making them unique or trendy. They reflect
+                                personal taste and can be practical, functional, or purely decorative.</p>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-1 mb-5">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="Head pt-5 mb-5 fw-semibold">Special Offer</h1>
+    <div class="card-2 d-flex justify-content-around">
+        <div class="card card-3 mt-5 mb-5 ms-xs-3 me-xs-3 ms-sm-4 me-sm-4 ms-md-5 me-md-5 ms-lg-6 me-lg-6 ms-xl-7 me-xl-7 ms-xxl-7 me-xxl-7">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="col-md-4">
+                    <img src="../Images/saree.jpg" class="saree" alt="...">
+                </div>
+                <div class="col-md-6 ms-xxl-5 ms-xl-5 ms-lg-5 ms-md-4">
+                    <div class="card-body text-4">
+                        <h1 class="card-title">Elegant Kanjeevaram Silk Saree</h1>
+                        <h4 class="card-title mt-4">Description</h4>
+                        <p class="card-text">
+                            <div>
+                            <div>"Fabric": "Pure Silk",</div>
+                            <div>"Work": "Zari Weaving",</div>
+                            <div>"Color": "Royal Red with Golden Border",</div>
+                            <div>"Blouse Piece": "Included (0.8 meters, unstitched)",</div>
+                            <div>"Occasion": "Wedding, Festive, Party Wear",</div>
+                            <div>"Wash Care": "Dry Clean Only",</div>
+                            <div>"Return Policy": "7-Day Easy Return",</div>
+                            <div>"SKU": "KANJ-SILK-ROYAL-001",</div>
+                            <div>"Customization": "Available on request",</div>
+                            <div>"Special Features": "Handwoven, Soft Texture, Rich Pallu Design",</div>
+                            <div>"In the Box": "1 Saree with Blouse Piece"</div>
+                            </div>
+                        </p>
+                        <a href="#" class="btn btn-primary btn-2 container">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home icon"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-bag icon"></i> Shop</a></li>
+                        <li><a href="About.html"><i class="fas fa-info-circle icon"></i> About Us</a></li>
+                        <li><a href="Contact.html"><i class="fas fa-phone icon"></i> Contact</a></li>
+                        <li><a href="#"><i class="fas fa-truck icon"></i> Track Order</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-question-circle icon"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-exchange-alt icon"></i> Returns Policy</a></li>
+                        <li><a href="#"><i class="fas fa-shipping-fast icon"></i> Shipping Info</a></li>
+                        <li><a href="#"><i class="fas fa-lock icon"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt icon"></i> Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-map-marker-alt icon"></i> 123 Store Street, City, Country</a></li>
+                        <li><a href="tel:+1234567890"><i class="fas fa-phone-alt icon"></i> +1 234 567 890</a></li>
+                        <li><a href="mailto:info@store.com"><i class="fas fa-envelope icon"></i> info@store.com</a></li>
+                        <li><a href="#"><i class="fas fa-clock icon"></i> Mon - Fri: 9:00 - 18:00</a></li>
+                    </ul>
+                    <div class="social-links icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <h3 style="margin-top: 20px;">We Accept</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                        <i class="fab fa-cc-discover"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Store Name. All rights reserved. Designed with <i class="fas fa-heart" style="color: #ff4d4d;"></i> for our customers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/BT-JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/WEB-JS/Web.js"></script>
+</body>
+
+</html>
