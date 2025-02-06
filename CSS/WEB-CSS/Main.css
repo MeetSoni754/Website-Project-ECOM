@@ -1158,13 +1158,6 @@ label span {
 }
 
 .divhide {
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    background-color: var(--secondary) !important;
-   width: 50%;
-    height: 500px;
-    z-index: 10;
     display: none; 
 }
 
@@ -1359,6 +1352,17 @@ label span {
         top: 13px;
         left: 90%;
         font-size: 2rem;
+    }
+
+    .divhide {
+        position: absolute;
+    top: 70px;
+    left: 50%;
+    background-color: var(--secondary) !important;
+   width: 50%;
+    height: 500px;
+    z-index: 10;
+    display: inline-block;
     }
 }
 
