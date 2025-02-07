@@ -58,6 +58,7 @@ function sizechange() {
         close.style.display = "flex"
         open.style.display = "none"
         element.style.display = "none"
+        
     }
 
 

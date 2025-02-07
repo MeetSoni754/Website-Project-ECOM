@@ -1170,7 +1170,7 @@ label span {
     width: 70%;
     height: 100vh;
     z-index: 10;
-    display: none;
+    display: none !important;
 }
 
 .close-1 {
