@@ -428,7 +428,7 @@ textarea.form-input {
 .story-image {
     border-radius: 10px;
     overflow: hidden;
-    
+
 }
 
 .story-content h2 {
@@ -813,20 +813,24 @@ textarea.form-input {
     background-color: var(--primary);
     color: white;
 }
+
 .btn-custom-primary {
     background-color: var(--secondary);
     color: white;
 }
+
 .btn-custom-primary:hover {
     background-color: var(--secondary);
     color: white;
 }
+
 .chat-widget {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1000;
 }
+
 .accordion-button:not(.collapsed) {
     background-color: var(--secondary);
     color: white;
@@ -900,6 +904,7 @@ button {
     -webkit-transform: translate3d(-640px, 0, 0);
     transform: translate3d(-640px, 0, 0);
 }
+
 /* 
 button {
     display: block;
@@ -1129,27 +1134,27 @@ label span {
     transform: translate3d(0, 0, 0);
 }
 
-.ham-links{
+.ham-links {
     display: flex !important;
     flex-direction: column;
     position: absolute;
     top: 30px;
     left: 1%;
     width: 100%;
-    font-size: 1.6rem;   
-    
+    font-size: 1.6rem;
+
 }
 
 .ham-icons {
     position: absolute;
-    top: 600px;
+    top: 500px;
     left: 1.1%;
     display: flex;
     gap: 0.7rem;
     font-size: 1.7rem;
     font-weight: 100;
     color: rgb(0, 0, 0) !important;
-    
+
 }
 
 .Ham-Icon {
@@ -1159,14 +1164,13 @@ label span {
 }
 
 .divhide {
-    position: fixed;
-    top: 70px;
-    left: 30%;
+    /* top: 70px;
+    left: 30%; */
     background-color: var(--secondary) !important;
-    width: 670%;
+    width: 70%;
     height: 100vh;
     z-index: 10;
-    display: none; 
+    display: none;
 }
 
 .close-1 {
