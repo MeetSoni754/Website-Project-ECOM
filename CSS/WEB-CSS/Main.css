@@ -1142,7 +1142,7 @@ label span {
 
 .ham-icons {
     position: absolute;
-    top: 500px;
+    top: 550px;
     left: 4%;
     display: flex;
     gap: 0.7rem;
@@ -1163,7 +1163,7 @@ label span {
     left: 30%;
     background-color: var(--secondary) !important;
     width: 70%;
-    height: 500px;
+    height: 100vh;
     z-index: 10;
     display: none; 
 }
